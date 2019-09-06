@@ -22,6 +22,7 @@
 		60FB8FF91B9B361600290979 /* SwiftyJSON-Class.json in Resources */ = {isa = PBXBuildFile; fileRef = 60FB8FEF1B9B361600290979 /* SwiftyJSON-Class.json */; };
 		60FB8FFC1B9B3F6400290979 /* ObjectiveC-Realm.json in Resources */ = {isa = PBXBuildFile; fileRef = 60FB8FFA1B9B3F6400290979 /* ObjectiveC-Realm.json */; };
 		60FB8FFD1B9B3F6400290979 /* Swift-Realm.json in Resources */ = {isa = PBXBuildFile; fileRef = 60FB8FFB1B9B3F6400290979 /* Swift-Realm.json */; };
+		71B4C1842322494B0002B179 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71B4C1862322494B0002B179 /* InfoPlist.strings */; };
 		71DD2116223C9E54008EC5D4 /* Swift-HandyJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 71DD2115223C9E54008EC5D4 /* Swift-HandyJSON.json */; };
 		71F54795231CFEAD00BD8C67 /* ObjectiveC-JSONModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 71F54794231CFEAD00BD8C67 /* ObjectiveC-JSONModel.json */; };
 		98978FC11D5B6B19000C1846 /* Swift-Struct-Unbox.json in Resources */ = {isa = PBXBuildFile; fileRef = 98978FC01D5B6B19000C1846 /* Swift-Struct-Unbox.json */; };
@@ -65,6 +66,10 @@
 		60FB8FEF1B9B361600290979 /* SwiftyJSON-Class.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "SwiftyJSON-Class.json"; path = "Supported Languages/SwiftyJSON-Class.json"; sourceTree = "<group>"; };
 		60FB8FFA1B9B3F6400290979 /* ObjectiveC-Realm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "ObjectiveC-Realm.json"; path = "Supported Languages/ObjectiveC-Realm.json"; sourceTree = "<group>"; };
 		60FB8FFB1B9B3F6400290979 /* Swift-Realm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-Realm.json"; path = "Supported Languages/Swift-Realm.json"; sourceTree = "<group>"; };
+		71B4C1812322488F0002B179 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		71B4C1852322494B0002B179 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		71B4C187232249560002B179 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		71B4C18F23224F850002B179 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		71DD2115223C9E54008EC5D4 /* Swift-HandyJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-HandyJSON.json"; path = "Supported Languages/Swift-HandyJSON.json"; sourceTree = "<group>"; };
 		71F54794231CFEAD00BD8C67 /* ObjectiveC-JSONModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "ObjectiveC-JSONModel.json"; path = "Supported Languages/ObjectiveC-JSONModel.json"; sourceTree = "<group>"; };
 		98978FC01D5B6B19000C1846 /* Swift-Struct-Unbox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Swift-Struct-Unbox.json"; path = "Supported Languages/Swift-Struct-Unbox.json"; sourceTree = "<group>"; };
@@ -235,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				E2FA87B91A059AC100648EB6 /* Info.plist */,
+				71B4C1862322494B0002B179 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 				English,
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = E2FA87AC1A059AC100648EB6;
 			productRefGroup = E2FA87B61A059AC100648EB6 /* Products */;
@@ -309,6 +316,7 @@
 				60FB8FF31B9B361600290979 /* ObjectiveC-iOS.json in Resources */,
 				60FB8FFC1B9B3F6400290979 /* ObjectiveC-Realm.json in Resources */,
 				60FB8FF11B9B361600290979 /* Java-Android.json in Resources */,
+				71B4C1842322494B0002B179 /* InfoPlist.strings in Resources */,
 				E24E443321AA12B800435FE7 /* Swift3-Mappable.json in Resources */,
 				60FB8FF81B9B361600290979 /* Swift-Struct.json in Resources */,
 				E2FA87BF1A059AC100648EB6 /* Images.xcassets in Resources */,
@@ -356,10 +364,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		71B4C1862322494B0002B179 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71B4C1852322494B0002B179 /* zh-Hans */,
+				71B4C187232249560002B179 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		E2FA87C01A059AC100648EB6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E2FA87C11A059AC100648EB6 /* Base */,
+				71B4C1812322488F0002B179 /* zh-Hans */,
+				71B4C18F23224F850002B179 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -475,6 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = JSONExport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -492,11 +512,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JSONExport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ahmed.ali.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "JSONExport/JSONExport-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
